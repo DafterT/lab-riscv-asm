@@ -1,5 +1,5 @@
 
-asm_prog/asm_prog.efi:     file format elf32-littleriscv
+c_prog/asm_prog.efi:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
