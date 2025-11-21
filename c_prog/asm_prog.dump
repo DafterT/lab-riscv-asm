@@ -22307,34 +22307,35 @@ Disassembly of section .rodata:
 00025740 <blanks.1-0x1f4>:
    25740:	6425                	lui	s0,0x9
    25742:	000a                	c.slli	zero,0x2
-   25744:	0001                	nop
-   25746:	0000                	unimp
-   25748:	0002                	c.slli64	zero
+   25744:	ffde                	fsw	fs7,252(sp)
+   25746:	ffff                	0xffff
+   25748:	000c                	0xc
    2574a:	0000                	unimp
-   2574c:	00000003          	lb	zero,0(zero) # 0 <register_fini-0x10074>
-   25750:	0004                	0x4
-   25752:	0000                	unimp
-   25754:	0005                	c.nop	1
-   25756:	0000                	unimp
-   25758:	0006                	c.slli	zero,0x1
-   2575a:	0000                	unimp
-   2575c:	00000007          	vle8.v	v0,(zero),v0.t
-   25760:	0008                	0x8
+   2574c:	002d                	c.nop	11
+   2574e:	0000                	unimp
+   25750:	fff8                	fsw	fa4,124(a5)
+   25752:	ffff                	0xffff
+   25754:	00000017          	auipc	zero,0x0
+   25758:	ffffffcf          	fnmadd.q	ft11,ft11,ft11,ft11
+   2575c:	0000                	unimp
+   2575e:	0000                	unimp
+   25760:	0011                	c.nop	4
    25762:	0000                	unimp
-   25764:	0009                	c.nop	2
-   25766:	0000                	unimp
-   25768:	000a                	c.slli	zero,0x2
+   25764:	fff1                	bnez	a5,25740 <__clzsi2+0x98>
+   25766:	ffff                	0xffff
+   25768:	0026                	c.slli	zero,0x9
    2576a:	0000                	unimp
-   2576c:	0000000b          	0xb
-   25770:	000c                	0xc
+   2576c:	ffea                	fsw	fs10,252(sp)
+   2576e:	ffff                	0xffff
+   25770:	0005                	c.nop	1
    25772:	0000                	unimp
-   25774:	000d                	c.nop	3
+   25774:	0032                	c.slli	zero,0xc
    25776:	0000                	unimp
-   25778:	000e                	c.slli	zero,0x3
-   2577a:	0000                	unimp
-   2577c:	0000000f          	fence	unknown,unknown
-   25780:	0010                	0x10
-   25782:	0000                	unimp
+   25778:	ffffffd7          	0xffffffd7
+   2577c:	001d                	c.nop	7
+   2577e:	0000                	unimp
+   25780:	fffa                	fsw	ft10,252(sp)
+   25782:	ffff                	0xffff
    25784:	4e49                	li	t3,18
    25786:	0046                	c.slli	zero,0x11
    25788:	6e69                	lui	t3,0x1a
